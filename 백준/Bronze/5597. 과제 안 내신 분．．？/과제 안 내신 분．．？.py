@@ -1,18 +1,15 @@
+# remove함수
+
 import sys
 
-arr=[]
-brr=[]
+arr=[i for i in range(1,31)]
 
 for i in range(28):
     n = int(sys.stdin.readline())
-    arr.append(n)
+    arr.remove(n)
 
-for i in range(1,31):
-    if i not in arr:
-        brr.append(i)
+arr.sort()
 
-brr.sort()
-
-print(brr[0])
-print(brr[1])
+print(arr[0])
+print(arr[1])
     
